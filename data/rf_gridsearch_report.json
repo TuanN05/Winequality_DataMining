@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-04-06T20:00:44",
+  "model": "RandomForestClassifier",
+  "cv_strategy": "StratifiedKFold(n_splits=10, shuffle=True, random_state=42)",
+  "scoring": "f1_weighted",
+  "best_params": {
+    "max_depth": 20,
+    "max_features": "sqrt",
+    "min_samples_leaf": 2,
+    "min_samples_split": 2,
+    "n_estimators": 100
+  },
+  "best_cv_f1_weighted": 0.670494396306836,
+  "test_f1_weighted": 0.6589397443084494,
+  "n_train": 1279,
+  "n_test": 320
+}
