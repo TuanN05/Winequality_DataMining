@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-06T23:31:38",
+  "timestamp": "2026-04-10T19:04:46",
   "model": "SVC",
   "cv_strategy": "StratifiedKFold(n_splits=10, shuffle=True, random_state=42)",
   "scoring": "f1_weighted",

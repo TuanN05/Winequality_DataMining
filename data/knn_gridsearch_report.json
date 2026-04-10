@@ -1,0 +1,10 @@
+{
+    "model": "K-Nearest Neighbors",
+    "best_params": {
+        "metric": "manhattan",
+        "n_neighbors": 19,
+        "weights": "distance"
+    },
+    "best_cv_score": 0.6613580239777417,
+    "test_f1_score": 0.6326074767591013
+}
