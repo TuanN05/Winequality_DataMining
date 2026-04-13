@@ -1,2 +1,2 @@
 ﻿timestamp,model,cv_strategy,scoring,best_params,best_cv_f1_weighted,test_f1_weighted,n_train,n_test
-2026-04-13T13:05:08,SVC,"StratifiedKFold(n_splits=10, shuffle=True, random_state=42)",f1_weighted,"{'C': 100, 'gamma': 1, 'kernel': 'rbf'}",0.6384380517693432,0.6396625905797102,1279,320
+2026-04-06T23:31:38,SVC,"StratifiedKFold(n_splits=10, shuffle=True, random_state=42)",f1_weighted,"{'C': 100, 'gamma': 1, 'kernel': 'rbf'}",0.6384380517693432,0.6396625905797102,1279,320
