@@ -6,9 +6,11 @@ Thực hiện các công việc sau:
   c. Số lượng thực thể của các giá trị nhãn
   d. Giá trị lớn nhất, bé nhất, và trung bình của các cột thuộc tính có giá trị số thực
 
-2. Tạo data mới để trực quan hóa. Data này chỉ lấy các cột thuộc tính là giá trị liên tục. Thu giảm số chiều và hiển thị trên không gian 2D, các nhãn khác nhau cho các màu khác nhau.
+2. Tạo data mới để trực quan hóa. Data này chỉ lấy các cột thuộc tính là giá trị liên tục. 
+Thu giảm số chiều và hiển thị trên không gian 2D, các nhãn khác nhau cho các màu khác nhau.
 
-3. Huấn luyện các mô hình học máy và so sánh đánh giá theo k-fold cross validation, với k=10. Chọn 3 mô hình để đánh giá trong các mô hình phân lớp sau: KNN, Random Forest, Naive Bayes,  AdaBoost, và SVM.
+3. Huấn luyện các mô hình học máy và so sánh đánh giá theo k-fold cross validation, với k=10. 
+Chọn 3 mô hình để đánh giá trong các mô hình phân lớp sau: KNN, Random Forest, Naive Bayes,  AdaBoost, và SVM.
 Tinh chỉnh tham số để các mô hình cho kết quả tốt nhất trước khi so sánh.
 Trình bày bảng so sánh hiệu năng các mô hình với độ đo F-Score
 
