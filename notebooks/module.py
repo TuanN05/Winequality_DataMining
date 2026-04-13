@@ -7,7 +7,6 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import StratifiedKFold, GridSearchCV
 from sklearn.metrics import f1_score
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.svm import SVC
 
 
 # ==========================================
@@ -73,42 +72,6 @@ def train_rf_with_gridsearch(X_train, y_train, param_grid=None, scoring="f1_weig
 
 
 # ==========================================
-# 5. MODULE HUẤN LUYỆN SVM + GRID SEARCH
-# ==========================================
-def train_svm_with_gridsearch(X_train, y_train, param_grid=None, scoring="f1_weighted"):
-    if param_grid is None:
-        param_grid = [
-            {
-                "C": [0.1, 1, 10, 100],
-                "kernel": ["linear"],
-            },
-            {
-                "C": [0.1, 1, 10, 100],
-                "kernel": ["rbf", "poly", "sigmoid"],
-                "gamma": ["scale", "auto", 0.01, 0.1, 1],
-            },
-        ]
-
-    svm = SVC()
-    cv = get_10_fold_cv()
-
-    grid = GridSearchCV(
-        estimator=svm,
-        param_grid=param_grid,
-        scoring=scoring,
-        cv=cv,
-        n_jobs=-1,
-        refit=True,
-        verbose=1,
-    )
-    grid.fit(X_train, y_train)
-
-    return {
-        "best_model": grid.best_estimator_,
-        "best_params": grid.best_params_,
-        "best_cv_score": float(grid.best_score_),
-        "grid_search": grid,
-    }
 
 
 # ==========================================
